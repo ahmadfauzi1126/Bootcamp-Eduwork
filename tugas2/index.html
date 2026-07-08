@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-inner wrap">
+        <div class="logo">
+          <h2>Brand<span>.</span></h2>
+        </div>
+        <nav id="mainNav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+      <div class="wrap hero">
+        <div class="hero-text">
+          <span class="section-label">Portfolio Pribadi</span>
+          <h1>Selamat Datang di <span class="accent">Website Saya</span></h1>
+          <p>
+            Ini adalah contoh website sederhana saya. Kunjungi terus bila suka
+            seperti ini.
+          </p>
+          <button class="btn">Lihat Project</button>
+        </div>
+        <div class="hero-image">
+          <div class="hero-image-frame">
+            <img
+              src="https://picsum.photos/id/1005/700/560"
+              alt="Foto profil hero"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="wrap">
+        <span class="section-label">Kenali Saya</span>
+        <h2>About Me</h2>
+        <p>A brief introduction about myself</p>
+
+        <div class="bio-grid">
+          <div class="bio-card">
+            <div class="icon">🧑‍💻</div>
+            <h4>Full Name</h4>
+            <p>Nama Lengkap Anda</p>
+          </div>
+          <div class="bio-card">
+            <div class="icon">🎓</div>
+            <h4>Education</h4>
+            <p>Universitas Anda</p>
+          </div>
+          <div class="bio-card">
+            <div class="icon">💼</div>
+            <h4>Pekerjaan</h4>
+            <p>Web Developer</p>
+          </div>
+          <div class="bio-card">
+            <div class="icon">📞</div>
+            <h4>Contact</h4>
+            <p>08xx-xxxx-xxxx</p>
+          </div>
+          <div class="bio-card">
+            <div class="icon">🎮</div>
+            <h4>Hobi</h4>
+            <p>Coding &amp; Desain</p>
+          </div>
+          <div class="bio-card">
+            <div class="icon">📍</div>
+            <h4>Alamat</h4>
+            <p>Cianjur, Jawa Barat</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio-section">
+      <div class="wrap">
+        <span class="section-label">Karya Saya</span>
+        <h2>Portofolio</h2>
+        <p>Beberapa project yang pernah saya kerjakan</p>
+
+        <div class="portfolio-grid">
+          <article class="project">
+            <div class="thumb">
+              <span class="tag">Web</span>
+              <img src="https://picsum.photos/id/180/500/300" alt="Project 1" />
+            </div>
+            <div class="body">
+              <h4>Project 1</h4>
+              <p>Deskripsi Project 1</p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="thumb">
+              <span class="tag">App</span>
+              <img src="https://picsum.photos/id/119/500/300" alt="Project 2" />
+            </div>
+            <div class="body">
+              <h4>Project 2</h4>
+              <p>Deskripsi Project 2</p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="thumb">
+              <span class="tag">UI/UX</span>
+              <img src="https://picsum.photos/id/3/500/300" alt="Project 3" />
+            </div>
+            <div class="body">
+              <h4>Project 3</h4>
+              <p>Deskripsi Project 3</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 My <span>Portfolio</span>. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const navToggle = document.getElementById("navToggle");
+      const mainNav = document.getElementById("mainNav");
+      navToggle.addEventListener("click", () => {
+        mainNav.classList.toggle("open");
+      });
+      mainNav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => mainNav.classList.remove("open"));
+      });
+    </script>
+  </body>
+</html>
