@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas E-Commerce Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Daftar Produk E-Commerce</h2>
+
+    <div class="filter-container">
+      <button class="btn-filter active" onclick="filterProduk('semua')">
+        Semua
+      </button>
+      <button class="btn-filter" onclick="filterProduk('elektronik')">
+        Elektronik
+      </button>
+      <button class="btn-filter" onclick="filterProduk('pakaian')">
+        Pakaian
+      </button>
+    </div>
+
+    <div id="daftar-produk" class="product-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
